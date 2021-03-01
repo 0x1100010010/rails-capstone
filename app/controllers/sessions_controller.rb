@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     @user = User.find_by_username(params[:username])
     if @user
       session[:user_id] = @user.id
-      redirect_to root_url, notice: 'Signed in successfully!'
+      redirect_to root_path, notice: 'Signed in successfully!'
     else
       flash.now[:alert] = 'Username is invalid'
       render 'new'
