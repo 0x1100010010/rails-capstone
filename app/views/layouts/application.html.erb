@@ -32,7 +32,15 @@
   </head>
 
   <body>
-    <%= yield %>
-  <%= console %>
+    <header>
+      <%= render 'shared/header' %>
+    </header>
+    <main>
+      <%= yield %>
+      <%= console %>
+    </main>
+    <footer>
+    </footer>
+      <%= render 'shared/footer' %>
   </body>
 </html>

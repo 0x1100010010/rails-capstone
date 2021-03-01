@@ -1,0 +1,28 @@
+ <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid justify-content-between">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbar-collapse-menu"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <% if current_user %>
+            <li class="nav-item">
+              <%= link_to 'Sign Out', signout_path,  :method => 'delete', class: 'nav-link px-3' %>
+            </li>
+          <% else %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
