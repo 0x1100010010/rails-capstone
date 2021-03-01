@@ -1,0 +1,27 @@
+<%= form_with url: sessions_path, local: true do |f| %>
+  <div class="container my-4">
+    <div class="row justify-center justify-content-center">
+      <div class="col-4">
+        <div class="card text-dark bg-white rounded shadow-sm p-0 border-0">
+          <div class='card-body p-5'>
+            <div class="d-flex justify-content-center mb-5"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="125" class="img-fluid rounded-circle img-thumbnail shadow-sm"></div>
+            <div class="form-inputs">
+              <%= f.text_field :username,
+                          autofocus: true,
+                          required: true,
+                          class: "form-control string required input mb-3",
+                          placeholder: "Username",
+                          label: false %>
+            </div>
+            <div class="card-footer border-0 p-0 bg-transparent d-flex flex-column align-items-center">
+              <div class="form-actions">
+                <%= f.submit 'Sign In', class: "btn btn-outline-success px-5 mt-3" %>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

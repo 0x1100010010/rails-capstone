@@ -1,0 +1,37 @@
+
+<%= form_for(@user) do |f| %>
+  <div class="container my-4">
+
+    <div class="row justify-center justify-content-center">
+      <div class="col-4">
+        <div class="card text-dark bg-white rounded shadow-sm p-0 border-0">
+          <%= f.error_notification %>
+          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+            <div class='card-body p-5'>
+              <div class="d-flex justify-content-center mb-5"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="125" class="img-fluid rounded-circle img-thumbnail shadow-sm"></div>
+              <div class="form-inputs">
+                <%= f.input :name,
+                            required: true,
+                            autofocus: true,
+                            input_html: { class: "input mb-3" },
+                            placeholder: "Full Name",
+                            label: false%>
+                <%= f.input :username,
+                            required: true,
+                            input_html: { class: "input mb-5" },
+                            placeholder: "Username",
+                            label: false%>
+              </div>
+
+            <div class="card-footer border-0 p-0 bg-transparent d-flex flex-column align-items-center">
+              <div class="form-actions d-grid gap-2">
+                <%= f.button :submit, class: "btn btn-outline-success px-5" %>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
