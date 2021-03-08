@@ -2,7 +2,13 @@ module ApplicationHelper
 
   def current_user
     if session[:user_id]
-      @current_user ||= User.find(session[:user_id])
+      begin
+        @current_user ||= User.find(session[:user_id])
+      rescue ActiveRecord::RecordNotFound
+      # rescue Exception
+      #   # handle everything else
+      #   raise
+      end
     else
       @current_user = nil
     end
