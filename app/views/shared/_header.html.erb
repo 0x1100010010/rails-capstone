@@ -1,7 +1,7 @@
  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid justify-content-between">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <%= link_to 'Home', users_path, class: 'navbar-brand' %>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,15 +17,19 @@
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
           <% if current_user %>
             <li class="nav-item">
-              <%= link_to 'Users', users_path,  :method => 'delete', class: 'nav-link px-3' %>
+              <%= link_to 'Users', users_path, class: 'nav-link px-3' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Transactions', transactions_path,  :method => 'delete', class: 'nav-link px-3' %>
+              <%= link_to 'Transactions', transactions_path, class: 'nav-link px-3' %>
             </li>
             <li class="nav-item">
-              <%= link_to 'Sign Out', signout_path,  :method => 'delete', class: 'nav-link px-3' %>
+              <%= link_to 'Sign Out', signout_path, class: 'nav-link px-3' %>
             </li>
           <% else %>
+            <li class="nav-item">
+              <%= link_to 'Sign In', signin_path, class: 'nav-link px-3'if current_page?(signup_path) %>
+              <%= link_to 'Sign Up', signup_path, class: 'nav-link px-3'if current_page?(signin_path) %>
+            </li>
           <% end %>
         </ul>
       </div>
