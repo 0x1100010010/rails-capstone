@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9005d412-b4a5-4d16-8276-11b367266dfc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b61ff22a-740a-4372-bba5-44b733dd0651.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/transactions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/transactions/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +163,7 @@
       <workItem from="1614520549340" duration="1263000" />
       <workItem from="1615127120746" duration="4409000" />
       <workItem from="1615190287817" duration="3226000" />
+      <workItem from="1615302443782" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
@@ -231,7 +228,35 @@
       <option name="project" value="LOCAL" />
       <updated>1615065595140</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Scaffolded Group">
+      <created>1615302662130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615302662130</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Group link to header">
+      <created>1615302683420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615302683420</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated Helper">
+      <created>1615302707265</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615302707265</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated User Model to reflect Group relation">
+      <created>1615302735963</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615302735963</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,10 +283,16 @@
     <MESSAGE value="Migrated Schema" />
     <MESSAGE value="Defined Transaction-User Relationship" />
     <MESSAGE value="Updated Routes" />
+    <MESSAGE value="Created Seed" />
+    <MESSAGE value="Added Null Condition" />
     <MESSAGE value="Updated Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Header" />
+    <MESSAGE value="Scaffolded Group" />
+    <MESSAGE value="Added Group link to header" />
+    <MESSAGE value="Updated Helper" />
+    <MESSAGE value="Updated User Model to reflect Group relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated User Model to reflect Group relation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615190744573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
+    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615302464844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
   </component>
 </project>

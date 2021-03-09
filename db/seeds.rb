@@ -9,5 +9,6 @@ users = User.create!([{ name: 'x', username: 'x' }, { name: 'y', username: 'y' }
 
 users.each do |user|
   user.transactions.create!([{ name: 'transaction_by_'+user.name+'_i', amount: 100 }, { name: 'transaction_by_'+user.name+'_ii', amount: 200 }, { name: 'transaction_by_'+user.name+'_iii', amount: 300 }])
+  user.groups.create!([{ name: 'group_by_'+user.name+'_i', description: 'Group description', icon: 'https://www.braintreepayments.com/images/products/schematic/icon-fraud-check.svg' }, { name: 'group_by_'+user.name+'_ii', description: 'Group description', icon: 'https://www.braintreepayments.com/images/products/schematic/icon-fraud-check.svg' }, { name: 'group_by_'+user.name+'_iii', description: 'Group description', icon: 'https://www.braintreepayments.com/images/products/schematic/icon-fraud-check.svg' }])
 end
 
