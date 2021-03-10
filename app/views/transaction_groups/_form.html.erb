@@ -1,0 +1,27 @@
+<%= form_with(model: transaction_group) do |form| %>
+  <% if transaction_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transaction_group.errors.count, "error") %> prohibited this transaction_group from being saved:</h2>
+
+      <ul>
+        <% transaction_group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :group_id %>
+    <%= form.text_field :group_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transaction_id %>
+    <%= form.text_field :transaction_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

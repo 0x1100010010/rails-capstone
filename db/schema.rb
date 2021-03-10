@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_08_150754) do
+ActiveRecord::Schema.define(version: 2021_03_10_101853) do
 
   create_table "groups", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 2021_03_08_150754) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_groups_on_user_id"
+  end
+
+  create_table "transaction_groups", force: :cascade do |t|
+    t.integer "group_id", null: false
+    t.integer "transaction_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["group_id"], name: "index_transaction_groups_on_group_id"
+    t.index ["transaction_id"], name: "index_transaction_groups_on_transaction_id"
   end
 
   create_table "transactions", force: :cascade do |t|
@@ -40,5 +49,7 @@ ActiveRecord::Schema.define(version: 2021_03_08_150754) do
   end
 
   add_foreign_key "groups", "users"
+  add_foreign_key "transaction_groups", "groups"
+  add_foreign_key "transaction_groups", "transactions"
   add_foreign_key "transactions", "users"
 end

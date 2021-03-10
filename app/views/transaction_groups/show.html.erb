@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @transaction_group.group_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @transaction_group.transaction_id %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_group_path(@transaction_group) %> |
+<%= link_to 'Back', transaction_groups_path %>
