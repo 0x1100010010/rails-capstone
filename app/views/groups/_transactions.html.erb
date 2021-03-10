@@ -1,0 +1,20 @@
+<div class="dropdown">
+  <button
+    class="btn btn-secondary dropdown-toggle"
+    type="button"
+    id="transactions"
+    data-mdb-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Add Transaction
+  </button>
+    <ul class="dropdown-menu" aria-labelledby="transactions">
+      <% @transactions.each do |t| %>
+        <% if transaction_exists?(t) %>
+          <li><div class="dropdown-item"><%= t.name %><%= button_to 'Remove', transaction_exists?(t), method: :delete %></div></li>
+        <% else %>
+          <li><div class="dropdown-item"><%= t.name %><%= button_to 'Add', transaction_groups_path( group_id: @group.id, transaction_id: t.id ), method: :post %></div></li>
+        <% end %>
+      <% end %>
+    </ul>
+</div>

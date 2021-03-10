@@ -25,7 +25,7 @@ class TransactionGroupsController < ApplicationController
 
     respond_to do |format|
       if @transaction_group.save
-        format.html { redirect_to @transaction_group, notice: "Transaction group was successfully created." }
+        format.html { redirect_to request.referrer, notice: "Transaction group was successfully created." }
         format.json { render :show, status: :created, location: @transaction_group }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,6 +64,6 @@ class TransactionGroupsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def transaction_group_params
-      params.require(:transaction_group).permit(:group_id, :transaction_id)
+      params.permit(:group_id, :transaction_id)
     end
 end
