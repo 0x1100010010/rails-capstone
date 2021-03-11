@@ -16,6 +16,7 @@
   <tbody>
     <% @groups.each do |group| %>
       <tr>
+        <td><%= image_tag(group.icon) %></td>
         <td><%= group.name %></td>
         <td><%= group.description %></td>
         <td><%= group.icon %></td>

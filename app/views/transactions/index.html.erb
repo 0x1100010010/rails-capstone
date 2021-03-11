@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<h1>Transactions</h1>
+<h1>Transactions </h1>
+<span> Total# <%= current_user.total_amount %> </span>
 
 <table>
   <thead>
@@ -11,9 +12,13 @@
     </tr>
   </thead>
 
+
+
   <tbody>
     <% @transactions.each do |transaction| %>
-      <tr>
+
+      <td>
+        <td><%= image_tag(current_user.groups.find(transaction.group_id).icon) if transaction.group_id %></td>
         <td><%= transaction.name %></td>
         <td><%= transaction.amount %></td>
         <td><%= transaction.user_id %></td>

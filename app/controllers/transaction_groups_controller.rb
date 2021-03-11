@@ -51,7 +51,7 @@ class TransactionGroupsController < ApplicationController
   def destroy
     @transaction_group.destroy
     respond_to do |format|
-      format.html { redirect_to transaction_groups_url, notice: "Transaction group was successfully destroyed." }
+      format.html { redirect_to request.referrer, notice: "Transaction group was successfully destroyed." }
       format.json { head :no_content }
     end
   end

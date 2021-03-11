@@ -9,10 +9,12 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/1 or /transactions/1.json
   def show
+    @groups = current_user.groups.all
   end
 
   # GET /transactions/new
   def new
+    @groups = current_user.groups.all
     @transaction = current_user.transactions.new
   end
 
