@@ -10,11 +10,9 @@ Rails.application.routes.draw do
     get 'signout', to: 'sessions#destroy'
   end
 
-  resources :users #do
-  #   resources :transactions
-  # end
-
+  resources :users
   resources :transactions
+  get 'external_transactions', to: 'transactions#index_external_transactions'
 
 
   root to: 'users#index'
