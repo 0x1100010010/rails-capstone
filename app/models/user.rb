@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :groups
 
   def external_transactions
-    transactions.select { |t| t.transaction_group_ids.empty? }
+    transactions.order(created_at: :desc).select { |t| t.transaction_group_ids.empty? }
   end
 
   def total_amount

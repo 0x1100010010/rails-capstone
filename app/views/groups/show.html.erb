@@ -12,13 +12,15 @@
 
 <p>
   <strong>Icon:</strong>
-  <%= @group.icon %>
+  <%= image_tag(@group.icon) %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @group.user_id %>
+  <strong>Owner:</strong>
+  <%= current_user.name %>
 </p>
+
+<span> Total# <%= current_user.total_amount %> </span>
 
 <%= render 'transactions' %>
 

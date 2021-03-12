@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation">
+      <change afterPath="$PROJECT_DIR$/app/views/transactions/index_external_transactions.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rails-capstone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-capstone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/transaction_groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/transaction_groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/groups_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/transaction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/groups/_transactions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/groups/_transactions.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/groups/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/transactions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/transactions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +199,8 @@
       <workItem from="1615127120746" duration="4409000" />
       <workItem from="1615190287817" duration="3226000" />
       <workItem from="1615302443782" duration="315000" />
-      <workItem from="1615459148949" duration="8587000" />
+      <workItem from="1615459148949" duration="15675000" />
+      <workItem from="1615539181592" duration="4007000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
@@ -285,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615302735963</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added external_transactions &amp; total_amount methods to User model">
+      <created>1615471778181</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615471778181</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added group association in transaction.rb">
+      <created>1615471807219</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615471807220</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,9 +341,11 @@
     <MESSAGE value="Added Group link to header" />
     <MESSAGE value="Updated Helper" />
     <MESSAGE value="Updated User Model to reflect Group relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated User Model to reflect Group relation" />
+    <MESSAGE value="Added external_transactions &amp; total_amount methods to User model" />
+    <MESSAGE value="Added group association in transaction.rb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added group association in transaction.rb" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615459473280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
+    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615539213086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
   </component>
 </project>
