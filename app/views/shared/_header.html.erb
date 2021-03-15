@@ -1,47 +1,50 @@
  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid justify-content-between">
-      <%= link_to 'Home', users_path, class: 'navbar-brand' %>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbar-collapse-menu"
-        aria-controls="navbarExample01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-collapse-menu">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <% if current_user %>
-            <li class="nav-item">
-              <%= link_to 'Users', users_path, class: 'nav-link px-3' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Groups', groups_path, class: 'nav-link px-3' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Transactions', transactions_path, class: 'nav-link px-3' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Extenal Transactions', external_transactions_path, class: 'nav-link px-3' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to current_user.name, current_user, class: 'nav-link px-3' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Sign Out', signout_path, class: 'nav-link px-3' %>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to 'Sign In', signin_path, class: 'nav-link px-3'if current_page?(signup_path) %>
-              <%= link_to 'Sign Up', signup_path, class: 'nav-link px-3'if current_page?(signin_path) %>
-            </li>
-          <% end %>
-        </ul>
+ <header class="mt-2 bg-primary">
+   <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid justify-content-between">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbar-collapse-menu"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <%= link_to 'Home', users_path, class: 'navbar-brand' %>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <% if current_user %>
+              <li class="nav-item">
+                <%= link_to 'Users', users_path, class: 'nav-link px-3' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Groups', groups_path, class: 'nav-link px-3' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Transactions', transactions_path, class: 'nav-link px-3' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Extenal Transactions', external_transactions_path, class: 'nav-link px-3' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to current_user.name, current_user, class: 'nav-link px-3' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Sign Out', signout_path, class: 'nav-link px-3' %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'Sign In', signin_path, class: 'nav-link px-3'if current_page?(signup_path) %>
+                <%= link_to 'Sign Up', signup_path, class: 'nav-link px-3'if current_page?(signin_path) %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+ </header>
   <!-- Navbar -->
