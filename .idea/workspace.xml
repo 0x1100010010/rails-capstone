@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/groups.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/groups.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/sessions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/sessions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/transaction_groups.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/transaction_groups.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/transactions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/transactions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +77,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/stylesheets" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: rails-capstone">
     <configuration name="Development: rails-capstone" type="RailsRunConfigurationType" factoryName="Rails">
@@ -333,6 +349,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added group association in transaction.rb" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615795155930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
+    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615818918957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
   </component>
 </project>

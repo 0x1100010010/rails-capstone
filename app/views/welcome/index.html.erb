@@ -1,2 +1,9 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class='rows d-flex justify-content-center text-center welcome'>
+  <section class='col-12 float-md-end mb-3 ms-md-3'>
+    <h1 class='m-4 text-shadow'>Le-Transactions</h1>
+    <div class="d-grid gap-2">
+      <%= link_to 'Sign In', signin_path, class: 'btn btn-primary text-light mb-2 shadow-0' %>
+      <%= link_to 'Sign Up', signup_path, class: 'btn btn-light shadow-0' %>
+    </div>
+  </section>
+</div>
