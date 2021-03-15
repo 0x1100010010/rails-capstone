@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def require_session
-    redirect_to signin_path, alert: 'Sign Up or Sign In to access this feature!' unless current_user
+    redirect_to welcome_path, alert: 'Sign Up or Sign In to access this feature!' unless current_user
   end
 
 end
