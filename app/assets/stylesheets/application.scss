@@ -34,7 +34,7 @@ $gray-800: #343a40 !default;
 $gray-900: #1a1a1a !default;
 $black:    #000 !default;
 
-$blue:    #007bff !default;
+$blue: #0088FF !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -45,7 +45,7 @@ $green:   #4bbf73 !default;
 $teal:    #20c997 !default;
 $cyan:    #1f9bcf !default;
 
-$primary:       $gray-900 !default;
+$primary:       linear-gradient(180deg, rgb(0, 136, 255) 0%, rgb(24, 123, 210) 100%) !default;
 $secondary:     $white !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -129,4 +129,26 @@ $breadcrumb-bg:                     transparent !default;
 
 .btn {
   box-shadow: 0;
+}
+
+.bg-primary{
+  background: $primary;
+}
+
+.btn-primary{
+  @extend .btn-primary;
+  background: $blue;
+  transition: 0.3s;
+  opacity: .9;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 11px 0px $blue;
+    -moz-box-shadow: 0px 0px 11px 0px $blue;
+    box-shadow: 0px 0px 11px 0px $blue;
+    opacity: 1;
+  }
+}
+
+.form-control {
+  border: 1px;
+  background: aliceblue;
 }

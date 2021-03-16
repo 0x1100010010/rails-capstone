@@ -1,8 +1,8 @@
+<div class='signup'>
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
       <ul>
         <% user.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,17 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+
+
+  <div class="form-outline field">
+    <%= form.text_field :name,
+                        autofocus: true,
+                        required: true,
+                        type: 'name',
+                        class: "form-control string required py-2 my-3",
+                        placeholder: "Name",
+                        label: true%>
   </div>
 
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
+  <div class="form-outline field">
+    <%= form.text_field :username,
+                        required: true,
+                        type: 'username',
+                        class: "form-control string required py-2 my-3",
+                        placeholder: "Username",
+                        label: true%>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-actions d-grid gap-2 actions">
+    <%= form.submit 'Sign Up', class: "btn btn-primary py-3 text-light mb-2 shadow-0" %>
   </div>
+
 <% end %>
+</div>
