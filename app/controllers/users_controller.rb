@@ -8,12 +8,17 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def home
+    redirect_to current_user
+  end
+
   # GET /users/1 or /users/1.json
   def show
   end
 
   # GET /users/new
   def new
+    redirect_to root_path if current_user
     @user = User.new
   end
 

@@ -15,6 +15,5 @@ Rails.application.routes.draw do
   resources :transactions
   get 'external_transactions', to: 'transactions#index_external_transactions'
 
-
-  root to: 'users#index'
+  root to: 'users#home'
 end

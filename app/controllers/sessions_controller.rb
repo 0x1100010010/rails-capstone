@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
-
-  def new; end
+  def new
+    redirect_to root_path if current_user
+  end
 
   def create
     @user = User.find_by_username(params[:username])

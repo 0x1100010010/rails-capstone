@@ -1,14 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<%= link_to edit_user_path(@user) do %>
+  <div class="card flex-row justify-content-content align-items-center mb-3">
+    <div class="card-body">
+      <h5 class="card-title m-0 text-center">Name: <%= @user.name %> | Username: <%= @user.username %></h5>
+    </div>
+  </div>
+<% end %>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+<%= link_to groups_path do %>
+<div class="card flex-row justify-content-content align-items-center mb-3">
+  <div class="col-3"><i class="fas fa-server fa-3x p-3"></i></div>
+  <div class="card-body">
+    <h5 class="card-title">Groups</h5>
+  </div>
+  <span class="badge rounded-pill badge-notification bg-success align-top"><%= @user.groups.count  %>
+</div>
+<% end %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to transactions_path do %>
+<div class="card flex-row justify-content-content align-items-center mb-3">
+  <div class="col-3"><i class="fas fa-dollar-sign fa-3x p-3"></i></div>
+  <div class="card-body">
+    <h5 class="card-title">Transactions</h5>
+  </div>
+  <span class="badge rounded-pill badge-notification bg-success align-top"><%= @user.transactions.count  %></span>
+</div>
+<% end %>
+
+<%= link_to external_transactions_path do %>
+<div class="card flex-row justify-content-content align-items-center mb-3">
+  <div class="col-3"><i class="fas fa-hryvnia fa-3x p-3"></i></div>
+  <div class="card-body">
+    <h5 class="card-title">External Transactions</h5>
+  </div>
+  <span class="badge rounded-pill badge-notification bg-success align-top"><%= @user.external_transactions.count %></span>
+</div>
+<% end %>
