@@ -2,29 +2,7 @@
 
 <h1>Groups</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Icon</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Created At</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @groups.each do |group| %>
-      <tr>
-        <td><%= image_tag(group.icon) %></td>
-        <td><%= group.name %></td>
-        <td><%= group.description %></td>
-        <td><%= group.created_at %></td>
-        <td><%= link_to 'Show', group %></td>
-        <td><%= link_to 'Edit', edit_group_path(group) %></td>
-        <td><%= button_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-
       <div class="card flex-row m-0 mb-3 ">
         <%= link_to group, class: "col-11 d-flex flex-row" do %>
           <div class="col-2 p-2 border-end"><%= image_tag(group.icon) %></div>
@@ -38,19 +16,19 @@
             <span class="badge rounded-pill bg-warning text-dark badge-font">Updated At# <%= group.updated_at.strftime("%d-%m-%Y") %></span>
           </div>
         <% end %>
-        <div class="col-1">
-          <%= link_to edit_group_path(group), class: 'btn btn-primary p-1 h-50 w-100' do %>
+        <div class="col-1 d-flex flex-column">
+          <%= link_to  edit_group_path(group), class: 'btn btn-primary p-1 h-75 w-100' do %>
             <i class="fas fa-edit"></i>
           <% end %>
-          <%= button_to group, method: :delete, class: 'btn btn-danger p-1 h-50 w-100', data: { confirm: 'Are you sure?' } do %>
+          <%= button_to group, class: 'btn btn-danger p-1 w-100', data: { confirm: 'Are you sure?' }, method: :delete do %>
             <i class="fas fa-trash"></i>
           <% end %>
         </div>
       </div>
     <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Group', new_group_path %>
+<div class="d-grid gap-2">
+  <%= link_to 'New Group', new_group_path, class: 'btn btn-primary py-3 text-light mb-2 shadow-0'  %>
+
+</div>

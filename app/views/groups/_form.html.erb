@@ -11,27 +11,38 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-outline field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name,
+                autofocus: true,
+                required: true,
+                type: 'name',
+                class: "form-control string required py-2 mb-3",
+                placeholder: "Name",
+                label: true %>
   </div>
 
-  <div class="field">
+  <div class="form-outline field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description,
+                        required: true,
+                        type: 'description',
+                        class: "form-control string required py-2 mb-3",
+                        placeholder: "Description",
+                        label: true %>
   </div>
 
-  <div class="field">
+  <div class="form-outline field">
     <%= form.label :icon %>
-    <%= form.text_field :icon %>
+    <%= form.text_field :icon,
+                    required: true,
+                    type: 'icon',
+                    class: "form-control string required py-2 mb-3",
+                    placeholder: "Icon URL",
+                    label: true %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-actions d-grid gap-2 actions">
+    <%= render_submit(form) %>
   </div>
 <% end %>

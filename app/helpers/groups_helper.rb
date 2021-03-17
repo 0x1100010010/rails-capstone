@@ -18,4 +18,6 @@ module GroupsHelper
         <% end %>"
     render inline: @html_out, locals: { event: event }
   end
+
+
 end

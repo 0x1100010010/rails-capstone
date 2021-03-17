@@ -33,11 +33,7 @@
   </div>
 
   <div class="form-actions d-grid gap-2 actions">
-    <% if request.fullpath.include?('signup') %>
-      <%= form.submit 'Sign Up', class: "btn btn-primary py-3 text-light mb-2 shadow-0" %>
-    <% else %>
-      <%= form.submit 'Update', class: "btn btn-primary py-3 text-light mb-2 shadow-0" %>
-    <% end %>
+    <%= render_submit(form) %>
   </div>
 
 <% end %>
