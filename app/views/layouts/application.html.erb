@@ -34,7 +34,7 @@
 
   <body class="container-fluid mb-0 bg-light-grey">
     <%= render 'shared/header' unless request.fullpath.include?('welcome')%>
-    <main class='container-fluid'>
+    <main class='container-fluid p-0 m-0'>
       <%= yield %>
       <%= console %>
     </main>

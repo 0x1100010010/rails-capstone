@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :username, presence: true, uniqueness: true, length: { maximum: 20 }
 
   has_many :transactions, dependent: :destroy
-  has_many :groups
+  has_many :groups, dependent: :destroy
 
   def external_transactions
     transactions.order(created_at: :desc).select { |t| t.transaction_group_ids.empty? }

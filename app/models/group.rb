@@ -1,4 +1,4 @@
 class Group < ApplicationRecord
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id'
-  has_many :transaction_groups
+  has_many :transaction_groups, dependent: :destroy
 end

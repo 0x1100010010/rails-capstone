@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/groups.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/groups.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/groups_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/groups_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/transaction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +204,9 @@
       <workItem from="1615302443782" duration="315000" />
       <workItem from="1615459148949" duration="15675000" />
       <workItem from="1615539181592" duration="4007000" />
-      <workItem from="1615881899941" duration="16855000" />
+      <workItem from="1615881899941" duration="23828000" />
+      <workItem from="1615920320310" duration="718000" />
+      <workItem from="1615979476361" duration="6093000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
@@ -348,6 +360,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Refactored Header &amp; Footer" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615895391707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
+    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1615981559223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
   </component>
 </project>
