@@ -1,4 +1,5 @@
 class TransactionsController < ApplicationController
+  include TransactionsHelper
   before_action :set_transaction, only: %i[ show edit update destroy ]
 
   # GET /transactions or /transactions.json
