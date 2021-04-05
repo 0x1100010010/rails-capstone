@@ -4,8 +4,8 @@
 
     <% @groups.each do |group| %>
       <div class="card flex-row m-0 mb-3 ">
-        <%= link_to group, class: "col-11 d-flex flex-row" do %>
-          <div class="col-2 p-2 border-end"><%= image_tag(group.icon) %></div>
+        <%= link_to group, class: "col-11 d-flex flex-row px-0" do %>
+          <div class="col-2 p-2 border-end"><%= image_tag((group.icon), class: 'mw-100') %></div>
           <div class="card-body">
             <h5 class="card-title"><%= group.name %></h5>
             <p class="card-text m-0">
@@ -16,11 +16,11 @@
             <span class="badge rounded-pill bg-warning text-dark badge-font">Updated At# <%= group.updated_at.strftime("%d-%m-%Y") %></span>
           </div>
         <% end %>
-        <div class="col-1 d-flex flex-column">
+        <div class="col-1 d-flex flex-column px-0">
           <%= link_to  edit_group_path(group), class: 'btn btn-primary p-1 h-75 w-100' do %>
             <i class="fas fa-edit"></i>
           <% end %>
-          <%= button_to group, class: 'btn btn-danger p-1 w-100', data: { confirm: 'Are you sure?' }, method: :delete do %>
+          <%= button_to group, class: 'btn btn-danger p-1 w-100 h-100', data: { confirm: 'Are you sure?' }, method: :delete do %>
             <i class="fas fa-trash"></i>
           <% end %>
         </div>
