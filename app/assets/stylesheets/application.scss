@@ -15,14 +15,16 @@
  */
 
 
-// Lux 4.6.0
-// Bootswatch
+main {
+  margin-bottom: 100px;
+}
+
 
 //
 // Color system
 //
 
-$white:    #fff !default;
+$white: #f0f8ff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #f7f7f9 !default;
 $gray-300: #eceeef !default;
@@ -122,6 +124,9 @@ $pagination-disabled-border-color:  $pagination-border-color !default;
 
 $breadcrumb-bg:                     transparent !default;
 
+.bg-white {
+  background: $white;
+}
 
 .bg-light-grey {
   background: $gray-300;
