@@ -1,28 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @group.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @group.description %>
-</p>
-
-<p>
-  <strong>Icon:</strong>
-  <%= image_tag(@group.icon) %>
-</p>
-
-<p>
-  <strong>Owner:</strong>
-  <%= current_user.name %>
-</p>
-
-<span> Total# <%= current_user.total_amount %> </span>
-
+<div class="card d-flex flex-column mb-3">
+<!--  <div class="d-flex flex-row">-->
+    <%= link_to edit_group_path(@group), class: 'd-flex flex-row' do %>
+      <div class="col-2 p-2 border-end"><%= image_tag(@group.icon) %></div>
+      <div class="col-10 card-body">
+        <h5 class="card-title"> <%= @group.name %></h5>
+        <p class="card-text m-0"><%= @group.description %></p>
+        <p class="card-text m-0"><%= number_to_currency(@group.transaction_sum) %></p>
+      </div>
+    <% end %>
 <%= render 'transactions' %>
-
-<%= link_to 'Edit', edit_group_path(@group) %> |
+</div>
+</div>
 <%= link_to 'Back', groups_path %>
