@@ -9,6 +9,10 @@ class User < ApplicationRecord
     transactions.order(created_at: :desc).select { |t| t.transaction_group_ids.empty? }
   end
 
+  def external_transactions_total
+    external_transactions.map { |t| t.amount.to_i }.sum
+  end
+
   def total_amount
     sum=0
     transactions.each { |t| sum+=t.amount.to_i }

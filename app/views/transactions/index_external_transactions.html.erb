@@ -1,11 +1,14 @@
 <p id="notice"><%= notice %></p>
-<h1>Transactions </h1>
-<span> Total# <%= current_user.total_amount %> </span>
+<div class='text-center'>
+<h1>External Transactions</h1>
+<p class="badge rounded-pill bg-warning text-dark">Total# <%= number_to_currency(current_user.total_amount) %> </p>
+</div>
 
 <% @transactions.each do |transaction| %>
   <div class="d-flex bg-white flex-row m-0 mb-3">
-    <%= link_to transaction, class: "col-11 d-flex flex-row px-0" do %>
+    <%= link_to edit_transaction_path(transaction), class: "col-11 d-flex flex-row px-0" do %>
         <div class="col-2 p-2 border-end"><i class="fas fa-users-slash fa-2x"></i></div>
+
         <div class="card-body">
           <h5 class="card-title"><%= transaction.name %></h5>
           <p class="card-text m-0"><%= number_to_currency(transaction.amount) %></p>
