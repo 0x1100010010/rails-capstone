@@ -15,7 +15,6 @@
 # gem 'pg'
 #
 default: &default
-  url: postgresql://localhost:5432/postgres
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
@@ -24,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  url: postgresql://localhost:5432/postgres
   database: capstone_db
   username: pg
   password: password
