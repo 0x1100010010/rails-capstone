@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation" />
+    <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +33,14 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="deployment" />
+                    <option name="lastUsedInstant" value="1617809921" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="finalize" />
+                    <option name="lastUsedInstant" value="1617809880" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="TransactionGroup" />
                     <option name="lastUsedInstant" value="1615371410" />
@@ -202,6 +213,8 @@
       <workItem from="1617693307838" duration="3317000" />
       <workItem from="1617710297109" duration="12199000" />
       <workItem from="1617779970804" duration="12741000" />
+      <workItem from="1617821297145" duration="1196000" />
+      <workItem from="1617874364199" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
