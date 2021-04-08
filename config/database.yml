@@ -17,6 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: pg
+  password: password
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -25,8 +27,6 @@ development:
   <<: *default
   url: postgresql://localhost:5432/postgres
   database: capstone_db
-  username: pg
-  password: password
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: capstone_db
-  username: pg
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: capstone_db_production
