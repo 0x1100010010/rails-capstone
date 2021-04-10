@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="Updated User Model to reflect Group relation">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/Screen Shot 2021-04-11 at 20.03.09-fullpage.png" afterDir="false" />
+    <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +218,7 @@
       <workItem from="1617821297145" duration="1196000" />
       <workItem from="1617874364199" duration="14873000" />
       <workItem from="1617975593574" duration="6397000" />
-      <workItem from="1618015750160" duration="10389000" />
+      <workItem from="1618015750160" duration="10703000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
@@ -397,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617731443779</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Minor bug fixed &amp; README update">
+      <created>1618067573936</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1618067573936</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +421,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modified Routes" />
     <MESSAGE value="Updated User controller" />
     <MESSAGE value="Scaffolded Transaction" />
     <MESSAGE value="Migrated Schema" />
@@ -441,7 +445,8 @@
     <MESSAGE value="Added Transaction methods to model" />
     <MESSAGE value="Updated transaction show partial" />
     <MESSAGE value="Updated Groups Show Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Groups Show Page" />
+    <MESSAGE value="Minor bug fixed &amp; README update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor bug fixed &amp; README update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1618062715431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />

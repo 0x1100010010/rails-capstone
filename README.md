@@ -1,10 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Le-Transactions
 
-> This is an application that let you keep recode of your transactions and group them to organize. 
+> Le-Transactions is a web application (Mobile screen only) that let you keep recode of your transactions and group them to organize. 
 >
-> This project is the Capstone Project for the Microverse Rails Technical Curriculum. ![microverse](https://camo.githubusercontent.com/3a5835d4f56c57cec85939ac345e43fef164c178/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6963726f76657273652d626c756576696f6c6574)
+> This project is the Capstone Project for the ![](https://img.shields.io/badge/Microverse-blueviolet) Rails Technical Curriculum. 
 > 
 > The project design is inspired by [Snapscan](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding) concept designed by [Gregoire Vella](https://www.behance.net/gregoirevella)
 
