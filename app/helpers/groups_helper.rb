@@ -1,6 +1,6 @@
 module GroupsHelper
-  def transaction_exists?(t)
-    @group.transaction_groups.find_by(transaction_id: t.id)
+  def transaction_exists?(transaction)
+    @group.transaction_groups.find_by(transaction_id: transaction.id)
   end
 
   def render_controls(event)
@@ -18,6 +18,4 @@ module GroupsHelper
         <% end %>"
     render inline: @html_out, locals: { event: event }
   end
-
-
 end

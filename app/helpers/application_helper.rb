@@ -1,13 +1,12 @@
 module ApplicationHelper
-
   def current_user
     if session[:user_id]
       begin
         @current_user ||= User.find(session[:user_id])
       rescue ActiveRecord::RecordNotFound
-      # rescue Exception
-      #   # handle everything else
-      #   raise
+        # rescue Exception
+        #   # handle everything else
+        #   raise
       end
     else
       @current_user = nil
@@ -25,5 +24,4 @@ module ApplicationHelper
       form.submit 'Create', class: 'btn btn-primary py-3 text-light mb-2 shadow-0'
     end
   end
-
 end

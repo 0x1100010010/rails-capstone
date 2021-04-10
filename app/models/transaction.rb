@@ -6,7 +6,7 @@ class Transaction < ApplicationRecord
   validates :amount, presence: true, numericality: true
 
   def group_ids
-      transaction_groups.map { |t| t.group_id }
+    transaction_groups.map(&:group_id)
   end
 
   def group_id

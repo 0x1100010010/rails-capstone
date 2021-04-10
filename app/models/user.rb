@@ -14,8 +14,8 @@ class User < ApplicationRecord
   end
 
   def total_amount
-    sum=0
-    transactions.each { |t| sum+=t.amount.to_i }
+    sum = 0
+    transactions.each { |t| sum += t.amount.to_i }
     sum
   end
 end
