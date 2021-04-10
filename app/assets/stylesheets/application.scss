@@ -162,3 +162,8 @@ $breadcrumb-bg:                     transparent !default;
 * {
   font-family: 'Proxima Nova';
 }
+
+a:hover {
+  background: lightgrey;
+  text-decoration: none;
+}
