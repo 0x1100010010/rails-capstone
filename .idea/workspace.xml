@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9069856d-cdc4-4f2c-a172-18658813554d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9069856d-cdc4-4f2c-a172-18658813554d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9069856d-cdc4-4f2c-a172-18658813554d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9069856d-cdc4-4f2c-a172-18658813554d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rails-capstone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-capstone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/groups_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +230,9 @@
       <workItem from="1617874364199" duration="14873000" />
       <workItem from="1617975593574" duration="6397000" />
       <workItem from="1618015750160" duration="14758000" />
-      <workItem from="1618145414072" duration="9673000" />
+      <workItem from="1618145414072" duration="11204000" />
+      <workItem from="1618197965506" duration="2354000" />
+      <workItem from="1618234648765" duration="8385000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>
@@ -462,6 +470,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Created method for header logic" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1618148465379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
+    <SUITE FILE_PATH="coverage/rails_capstone@Development__rails_capstone.rcov" NAME="Development: rails-capstone Coverage Results" MODIFIED="1618234976209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-capstone" />
   </component>
 </project>
