@@ -26,5 +26,4 @@ RSpec.describe Transaction, type: :model do
     @transaction = Transaction.create(name: 'McDonalds transaction', amount: '15')
     expect(@transaction.valid?).to be false
   end
-
 end

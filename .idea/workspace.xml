@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2d8f28-06c1-4bc9-a962-1e9d2d2298dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/group_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/group_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/transaction_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/transaction_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +232,7 @@
       <workItem from="1618145414072" duration="11204000" />
       <workItem from="1618197965506" duration="2354000" />
       <workItem from="1618234648765" duration="15698000" />
-      <workItem from="1618392589971" duration="13303000" />
+      <workItem from="1618392589971" duration="16386000" />
     </task>
     <task id="LOCAL-00001" summary="Added Session Views">
       <created>1614610406464</created>

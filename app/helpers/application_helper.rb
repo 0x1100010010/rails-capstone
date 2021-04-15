@@ -30,7 +30,8 @@ module ApplicationHelper
     if current_user
       html_out << "<li class='nav-item'><%= link_to 'Groups', groups_path, class: 'nav-link px-3' %></li>"
       html_out << "<li class='nav-item'><%= link_to 'Transactions', transactions_path, class: 'nav-link px-3' %></li>"
-      html_out << "<li class='nav-item'><%= link_to 'Extenal Transactions', external_transactions_path, class: 'nav-link px-3' %></li>"
+      html_out << "<li class='nav-item'>"
+      html_out << "<%= link_to 'Extenal Transactions', external_transactions_path, class: 'nav-link px-3' %></li>"
       html_out << "<li class='nav-item'><%= link_to current_user.name, current_user, class: 'nav-link px-3' %></li>"
       html_out << "<li class='nav-item'><%= link_to 'Sign Out', signout_path, class: 'nav-link px-3' %></li>"
     else

@@ -18,7 +18,7 @@ RSpec.describe Group, type: :model do
   end
 
   it 'checks if group can be created without description' do
-    @group = Group.new(name: 'McDonalds',  icon: 'https://upload.wikimedia.org/wikipedia/commons/5/50/McDonald%27s_SVG_logo.svg')
+    @group = Group.new(name: 'McDonalds', icon: 'https://upload.wikimedia.org/wikipedia/commons/5/50/McDonald%27s_SVG_logo.svg')
     expect(@group.valid?).to be false
   end
 end
