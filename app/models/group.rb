@@ -6,7 +6,8 @@ class Group < ApplicationRecord
 
   validates :name, length: { maximum: 30 }
   validates :description, presence: true, length: { maximum: 300 }
-  validates :icon, presence: true
+  validates :icon, presence: true, format: URI::DEFAULT_PARSER.make_regexp(%w[http https])
+  validates_format_of :icon, with: /\.(gif|jpe?g|png|svg)$/i, message: 'must have an image extension', multiline: true
 
   def transaction_ids
     transaction_groups.map(&:transaction_id)
