@@ -42,4 +42,13 @@ module ApplicationHelper
     end
     render inline: html_out
   end
+
+  def error_log(obj)
+    html_out = ''
+    if obj.errors.any?
+      html_out << "<div id='error_explanation'><h2><%= pluralize(obj.errors.count, 'error') %> prohibited this entry from being
+      saved:</h2><ul><% obj.errors.each do |error| %><li><%= error.full_message %></li><% end %></ul></div>"
+    end
+    render inline: html_out, locals: { obj: obj}
+  end
 end
