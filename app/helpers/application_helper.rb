@@ -4,9 +4,7 @@ module ApplicationHelper
       begin
         @current_user ||= User.find(session[:user_id])
       rescue ActiveRecord::RecordNotFound
-        # rescue Exception
-        #   # handle everything else
-        #   raise
+        flash[:notice] = 'No session found!'
       end
     else
       @current_user = nil

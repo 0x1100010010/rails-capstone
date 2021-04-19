@@ -14,8 +14,6 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Proxima+Nova);
-
 main {
   margin-bottom: 100px;
 }
@@ -65,8 +63,6 @@ $enable-rounded:            false !default;
 // Body
 
 $body-color:                $gray-700 !default;
-
-// Fonts
 
 // stylelint-disable-next-line value-keyword-case
 $font-family-sans-serif:      "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;

@@ -15,6 +15,7 @@
       />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link
@@ -40,7 +41,6 @@
     <%= render 'shared/header' unless request.fullpath.include?('welcome')%>
     <main class='container-fluid p-0'>
       <%= yield %>
-      <%#= console %>
     </main>
     <%= render 'shared/footer' %>
   </body>
