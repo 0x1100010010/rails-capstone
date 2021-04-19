@@ -14,7 +14,7 @@
             <p class="card-text m-0">
               <%= number_to_currency(transaction.amount) %>
             </p>
-            <!--            strftime("%Y-%m-%d %I:%M %p")-->
+            <!--strftime("%Y-%m-%d %I:%M %p")-->
             <small><span class="badge rounded-pill bg-info badge-font">Created At# <%= transaction.created_at.strftime("%d-%m-%Y") %></span></small>
             <small><span class="badge rounded-pill bg-warning text-dark badge-font">Updated At# <%= transaction.updated_at.strftime("%d-%m-%Y") %></span></small>
           </div>

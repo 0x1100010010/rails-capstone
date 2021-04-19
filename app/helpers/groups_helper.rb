@@ -30,13 +30,16 @@ module GroupsHelper
     render inline: @html_out, locals: { transaction: transaction }
   end
 
-  def list_dropdown(t)
+  def list_dropdown(transaction)
     @html_out = ''
-    if transaction_exists?(t)
-      @html_out << "<li><div class='dropdown-item d-grid gap-2'><%= t.name %><%= button_to 'Remove', transaction_exists?(t), method: :delete %></div></li>"
-    else
-      @html_out << "<li><div class='dropdown-item d-grid gap-2'><%= t.name %><%= button_to 'Add', transaction_groups_path( group_id: @group.id, transaction_id: t.id ), method: :post %></div></li>"
-    end
-    render inline: @html_out, locals: { t: t }
+    @html_out << if transaction_exists?(transaction)
+                   "<li><div class='dropdown-item d-grid gap-2'><%= transaction.name %><%= button_to 'Remove',
+                    transaction_exists?(transaction), method: :delete %></div></li>"
+                 else
+                   "<li><div class='dropdown-item d-grid gap-2'><%= transaction.name %><%= button_to 'Add',
+                    transaction_groups_path( group_id: @group.id, transaction_id: transaction.id ),
+                    method: :post %></div></li>"
+                 end
+    render inline: @html_out, locals: { transaction: transaction }
   end
 end
