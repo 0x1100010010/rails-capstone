@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  include SessionsHelper
+
   def new
     redirect_to root_path if current_user
   end
@@ -10,7 +12,7 @@ class SessionsController < ApplicationController
       redirect_to root_path, notice: 'Signed in successfully!'
     else
       flash.now[:alert] = 'Username is invalid'
-      render 'new'
+      redirect_to request.referrer
     end
   end
 
