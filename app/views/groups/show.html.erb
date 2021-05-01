@@ -3,7 +3,7 @@
 <div class="card d-flex flex-column mb-3">
 <!--  <div class="d-flex flex-row">-->
     <%= link_to edit_group_path(@group), class: 'd-flex flex-row' do %>
-      <div class="col-2 p-2 border-end"><%= image_tag(@group.icon) %></div>
+      <div class="col-2 p-2 border-end"><%= image_tag(@group.icon, class: 'mw-100') %></div>
       <div class="col-10 card-body">
         <h5 class="card-title"> <%= @group.name %></h5>
         <p class="card-text m-0"><%= @group.description %></p>

@@ -14,12 +14,9 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Proxima+Nova);
-
 main {
   margin-bottom: 100px;
 }
-
 
 //
 // Color system
@@ -37,7 +34,7 @@ $gray-800: #343a40 !default;
 $gray-900: #1a1a1a !default;
 $black:    #000 !default;
 
-$blue: #0088FF !default;
+$blue: #08f !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -67,23 +64,21 @@ $enable-rounded:            false !default;
 
 $body-color:                $gray-700 !default;
 
-// Fonts
-
 // stylelint-disable-next-line value-keyword-case
 $font-family-sans-serif:      "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-size-base:              .875rem !default;
+$font-size-base:              0.875rem !default;
 $h1-font-size:                2rem !default;
 $h2-font-size:                1.75rem !default;
 $h3-font-size:                1.5rem !default;
 $h4-font-size:                1.25rem !default;
 $h5-font-size:                1rem !default;
-$h6-font-size:                .75rem !default;
+$h6-font-size:                0.75rem !default;
 $headings-font-weight:        600 !default;
 $headings-color:              $gray-900 !default;
 
 // Tables
 
-$table-border-color:          rgba(0, 0, 0, .05) !default;
+$table-border-color:          rgba(0, 0, 0, 0.05) !default;
 
 // Buttons + Forms
 
@@ -92,9 +87,9 @@ $input-btn-border-width:      0 !default;
 // Buttons
 
 $btn-line-height:             1.5rem !default;
-$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-y:         0.75rem !default;
 $input-btn-padding-x:         1.5rem !default;
-$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-y-sm:      0.5rem !default;
 $input-btn-padding-x-sm:      1rem !default;
 $input-btn-padding-y-lg:      2rem !default;
 $input-btn-padding-x-lg:      2rem !default;
@@ -111,7 +106,7 @@ $input-group-addon-bg:                  $gray-300 !default;
 
 $navbar-padding-y:                  1.5rem !default;
 $navbar-dark-hover-color:           $white !default;
-$navbar-light-color:                rgba($black, .3) !default;
+$navbar-light-color:                rgba($black, 0.3) !default;
 $navbar-light-hover-color:          $gray-900 !default;
 $navbar-light-active-color:         $gray-900 !default;
 
@@ -134,22 +129,24 @@ $breadcrumb-bg:                     transparent !default;
 }
 
 .btn {
-  box-shadow: 0;
+  box-shadow: none;
 }
 
-.bg-primary{
+.bg-primary {
   background: $primary;
 }
 
-.btn-primary{
+.btn-primary {
   @extend .btn-primary;
+
   background: $blue;
   transition: 0.3s;
-  opacity: .9;
+  opacity: 0.9;
+
   &:hover {
-    -webkit-box-shadow: 0px 0px 11px 0px $blue;
-    -moz-box-shadow: 0px 0px 11px 0px $blue;
-    box-shadow: 0px 0px 11px 0px $blue;
+    -webkit-box-shadow: 0 0 11px 0 $blue;
+    -moz-box-shadow: 0 0 11px 0 $blue;
+    box-shadow: 0 0 11px 0 $blue;
     opacity: 1;
   }
 }
@@ -160,7 +157,7 @@ $breadcrumb-bg:                     transparent !default;
 }
 
 * {
-  font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova', Arial, sans-serif;
 }
 
 a:hover {

@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class='text-center'>
 <h1>External Transactions</h1>
-<p class="badge rounded-pill bg-warning text-dark">Total# <%= number_to_currency(current_user.total_amount) %> </p>
+<p class="badge rounded-pill bg-warning text-dark">Total# <%= number_to_currency(current_user.external_transactions_total) %> </p>
 </div>
 
 <% @transactions.each do |transaction| %>

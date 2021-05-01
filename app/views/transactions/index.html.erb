@@ -14,7 +14,7 @@
             <p class="card-text m-0">
               <%= number_to_currency(transaction.amount) %>
             </p>
-            <!--            strftime("%Y-%m-%d %I:%M %p")-->
+            <!--strftime("%Y-%m-%d %I:%M %p")-->
             <small><span class="badge rounded-pill bg-info badge-font">Created At# <%= transaction.created_at.strftime("%d-%m-%Y") %></span></small>
             <small><span class="badge rounded-pill bg-warning text-dark badge-font">Updated At# <%= transaction.updated_at.strftime("%d-%m-%Y") %></span></small>
           </div>
@@ -35,5 +35,5 @@
 
 <br>
 <div class="d-grid gap-2">
-<%= link_to 'New Transaction', new_transaction_path, class: 'btn btn-primary py-3 text-light mb-2 shadow-0'  %>
+<%= link_to 'Add New', new_transaction_path, class: 'btn btn-primary py-3 text-light mb-2 shadow-0'  %>
 </div>
